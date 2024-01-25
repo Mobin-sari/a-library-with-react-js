@@ -1,13 +1,13 @@
-import Layout from "./layouts/Layout.jsx";
+import Layout from "./layouts/Layout";
+
+// import styles from "./app.module.css";
+import Books from "./components/Books";
 
 function App() {
   
   return (
       <Layout>
-        <div>
-          <p>mobiiin</p>
-        </div>
-        
+        <Books />
       </Layout>
   );
 }
