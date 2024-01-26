@@ -9,14 +9,17 @@ import styles from "./bookcard.module.css"
 import { FaHeart } from "react-icons/fa";
 
 BookCard.propTypes = {
-    data: PropTypes.string.isRequred
+    data: PropTypes.string.isRequred,
+    handleLikedList: PropTypes.string.isRequired
 };
 
-function BookCard({ data: {title, author, image, language, pages} }) {
+function BookCard({ data, handleLikedList }) {
+    const {title, author, image, language, pages} = data;
     const [like, setLike] = useState(false)
 
     const likeHandler = () => {
-        setLike((like) => !like)
+        setLike((like) => !like);
+        handleLikedList( data, like )
     };
 
     return (
