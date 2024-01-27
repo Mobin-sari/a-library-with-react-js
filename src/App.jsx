@@ -1,6 +1,5 @@
+// components
 import Layout from "./layouts/Layout";
-
-// import styles from "./app.module.css";
 import Books from "./components/Books";
 
 function App() {

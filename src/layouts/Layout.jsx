@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+// styles
 import styles from "./layout.module.css" 
 
 Layout.propTypes = {

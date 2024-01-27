@@ -1,22 +1,17 @@
-import PropTypes from 'prop-types';
-
-import { motion } from "framer-motion"
-
 import { useState } from 'react';
-
+// framer motion
+import { motion } from "framer-motion"
+// styles
 import styles from "./bookcard.module.css"
-
+// react-icons
 import { FaHeart } from "react-icons/fa";
 
-BookCard.propTypes = {
-    data: PropTypes.string.isRequred,
-    handleLikedList: PropTypes.string.isRequired
-};
-
 function BookCard({ data, handleLikedList }) {
+    // constructur atate:
     const {title, author, image, language, pages} = data;
+    // state for like books.
     const [like, setLike] = useState(false)
-
+    // a function for changig like state.
     const likeHandler = () => {
         setLike((like) => !like);
         handleLikedList( data, like )

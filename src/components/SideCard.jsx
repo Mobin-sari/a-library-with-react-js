@@ -1,13 +1,7 @@
-import PropTypes from 'prop-types';
-
+// styles
 import styles from "./sidecard.module.css"
 
-SideCard.propTypes = {
-    data: PropTypes.string.isRequired
-};
-
 function SideCard({ data: {image, title} }) {
-
     return (
         <div className={styles.card}>
             <img src={image} alt={title} />
