@@ -7,7 +7,7 @@ import styles from "./bookcard.module.css"
 import { FaHeart } from "react-icons/fa";
 
 function BookCard({ data, handleLikedList }) {
-    // constructur atate:
+    // constructur data:
     const {title, author, image, language, pages} = data;
     // state for like books.
     const [like, setLike] = useState(false)
