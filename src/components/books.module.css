@@ -23,3 +23,18 @@
 .favorite h4 {
     font-size: 1.2rem;
 }
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cards {
+        flex: none;
+    }
+    .favorite {
+        flex: none;
+        margin-right: 15px;
+        margin-bottom: 25px;
+    }
+}
